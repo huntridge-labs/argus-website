@@ -1,0 +1,300 @@
+/* =========================================
+   ARGUS DESIGN TOKENS
+   Combined Color + Typography Tokens
+   ========================================= */
+
+:root {
+  /* =========================================
+     COLORS
+     ========================================= */
+
+  /* Green */
+  --color-green-50: #F8FFA1;
+  --color-green-200: #DBE64C;
+  --color-green-400: #84B852;
+  --color-green-600: #118A4F;
+  --color-green-700: #00523E;
+  --color-green-900: #002AA2; /* verify if intended */
+
+  /* Blue */
+  --color-blue-50: #D4F8FF;
+  --color-blue-200: #A5E8FF;
+  --color-blue-400: #5DBCEF;
+  --color-blue-600: #1F87D2;
+  --color-blue-700: #1E4890;
+  --color-blue-900: #072650;
+
+  /* Neutral */
+  --color-neutral-50: #F5F5F5;
+  --color-neutral-200: #B7B7EF; /* verify if intended */
+  --color-neutral-400: #9E9E9E; /* normalized from likely typo */
+  --color-neutral-600: #757575;
+  --color-neutral-700: #3B3B3B;
+  --color-neutral-900: #1E1E1E;
+
+  /* Base */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(
+    90deg,
+    #072650 0%,
+    #1F87D2 33%,
+    #84B852 66%,
+    #F8FFA1 100%
+  );
+
+  /* =========================================
+     FONT FAMILIES
+     ========================================= */
+
+  --font-family-heading: "Exo 2", sans-serif;
+  --font-family-body: "Noto Sans", sans-serif;
+
+  /* =========================================
+     HEADINGS
+     All headings use Exo 2 Regular
+     ========================================= */
+
+  --font-heading-jumbo-family: var(--font-family-heading);
+  --font-heading-jumbo-size: 64px;
+  --font-heading-jumbo-line-height: 76.8px;
+  --font-heading-jumbo-weight: 400;
+
+  --font-heading-1-family: var(--font-family-heading);
+  --font-heading-1-size: 40px;
+  --font-heading-1-line-height: 52px;
+  --font-heading-1-weight: 400;
+
+  --font-heading-2-family: var(--font-family-heading);
+  --font-heading-2-size: 30px;
+  --font-heading-2-line-height: 39px;
+  --font-heading-2-weight: 400;
+
+  --font-heading-3-family: var(--font-family-heading);
+  --font-heading-3-size: 20px;
+  --font-heading-3-line-height: 26px;
+  --font-heading-3-weight: 400;
+
+  --font-heading-4-family: var(--font-family-heading);
+  --font-heading-4-size: 17px;
+  --font-heading-4-line-height: 22.1px;
+  --font-heading-4-weight: 400;
+
+  --font-heading-5-family: var(--font-family-heading);
+  --font-heading-5-size: 15px;
+  --font-heading-5-line-height: 22.5px;
+  --font-heading-5-weight: 400;
+
+  /* =========================================
+     EYEBROW
+     ========================================= */
+
+  --font-eyebrow-family: var(--font-family-body);
+  --font-eyebrow-size: 13px;
+  --font-eyebrow-line-height: 17.7px;
+  --font-eyebrow-weight: 400;
+  --font-eyebrow-letter-spacing: 0.05em;
+  --font-eyebrow-text-transform: uppercase;
+
+  /* =========================================
+     BODY LARGE - EXO 2
+     ========================================= */
+
+  --font-body-large-regular-family: var(--font-family-heading);
+  --font-body-large-regular-size: 20px;
+  --font-body-large-regular-line-height: 34px;
+  --font-body-large-regular-weight: 400;
+  --font-body-large-regular-style: normal;
+
+  --font-body-large-strong-family: var(--font-family-heading);
+  --font-body-large-strong-size: 20px;
+  --font-body-large-strong-line-height: 34px;
+  --font-body-large-strong-weight: 700;
+  --font-body-large-strong-style: normal;
+
+  --font-body-large-emphasis-family: var(--font-family-heading);
+  --font-body-large-emphasis-size: 20px;
+  --font-body-large-emphasis-line-height: 34px;
+  --font-body-large-emphasis-weight: 400;
+  --font-body-large-emphasis-style: italic;
+
+  --font-body-large-strong-emphasis-family: var(--font-family-heading);
+  --font-body-large-strong-emphasis-size: 20px;
+  --font-body-large-strong-emphasis-line-height: 34px;
+  --font-body-large-strong-emphasis-weight: 700;
+  --font-body-large-strong-emphasis-style: italic;
+
+  /* =========================================
+     BODY BASE - NOTO SANS
+     ========================================= */
+
+  --font-body-base-regular-family: var(--font-family-body);
+  --font-body-base-regular-size: 16.96px;
+  --font-body-base-regular-line-height: 25.4px;
+  --font-body-base-regular-weight: 400;
+  --font-body-base-regular-style: normal;
+
+  --font-body-base-strong-family: var(--font-family-body);
+  --font-body-base-strong-size: 16.96px;
+  --font-body-base-strong-line-height: 25.4px;
+  --font-body-base-strong-weight: 700;
+  --font-body-base-strong-style: normal;
+
+  --font-body-base-emphasis-family: var(--font-family-body);
+  --font-body-base-emphasis-size: 16.96px;
+  --font-body-base-emphasis-line-height: 25.4px;
+  --font-body-base-emphasis-weight: 400;
+  --font-body-base-emphasis-style: italic;
+
+  --font-body-base-strong-emphasis-family: var(--font-family-body);
+  --font-body-base-strong-emphasis-size: 16.96px;
+  --font-body-base-strong-emphasis-line-height: 25.4px;
+  --font-body-base-strong-emphasis-weight: 700;
+  --font-body-base-strong-emphasis-style: italic;
+
+  /* =========================================
+     LINK TEXT - NOTO SANS
+     ========================================= */
+
+  --font-link-regular-family: var(--font-family-body);
+  --font-link-regular-size: 16.96px;
+  --font-link-regular-line-height: 24.4px;
+  --font-link-regular-weight: 400;
+  --font-link-regular-style: normal;
+
+  --font-link-strong-family: var(--font-family-body);
+  --font-link-strong-size: 16.96px;
+  --font-link-strong-line-height: 24.4px;
+  --font-link-strong-weight: 700;
+  --font-link-strong-style: normal;
+}
+
+/* =========================================
+   OPTIONAL UTILITY CLASSES
+   ========================================= */
+
+.text-heading-1 {
+  font-family: var(--font-heading-1-family);
+  font-size: var(--font-heading-1-size);
+  line-height: var(--font-heading-1-line-height);
+  font-weight: var(--font-heading-1-weight);
+}
+
+.text-heading-2 {
+  font-family: var(--font-heading-2-family);
+  font-size: var(--font-heading-2-size);
+  line-height: var(--font-heading-2-line-height);
+  font-weight: var(--font-heading-2-weight);
+}
+
+.text-heading-3 {
+  font-family: var(--font-heading-3-family);
+  font-size: var(--font-heading-3-size);
+  line-height: var(--font-heading-3-line-height);
+  font-weight: var(--font-heading-3-weight);
+}
+
+.text-heading-4 {
+  font-family: var(--font-heading-4-family);
+  font-size: var(--font-heading-4-size);
+  line-height: var(--font-heading-4-line-height);
+  font-weight: var(--font-heading-4-weight);
+}
+
+.text-heading-5 {
+  font-family: var(--font-heading-5-family);
+  font-size: var(--font-heading-5-size);
+  line-height: var(--font-heading-5-line-height);
+  font-weight: var(--font-heading-5-weight);
+}
+
+.text-eyebrow {
+  font-family: var(--font-eyebrow-family);
+  font-size: var(--font-eyebrow-size);
+  line-height: var(--font-eyebrow-line-height);
+  font-weight: var(--font-eyebrow-weight);
+  letter-spacing: var(--font-eyebrow-letter-spacing);
+  text-transform: var(--font-eyebrow-text-transform);
+}
+
+.text-body-large {
+  font-family: var(--font-body-large-regular-family);
+  font-size: var(--font-body-large-regular-size);
+  line-height: var(--font-body-large-regular-line-height);
+  font-weight: var(--font-body-large-regular-weight);
+  font-style: var(--font-body-large-regular-style);
+}
+
+.text-body-large-strong {
+  font-family: var(--font-body-large-strong-family);
+  font-size: var(--font-body-large-strong-size);
+  line-height: var(--font-body-large-strong-line-height);
+  font-weight: var(--font-body-large-strong-weight);
+  font-style: var(--font-body-large-strong-style);
+}
+
+.text-body-large-emphasis {
+  font-family: var(--font-body-large-emphasis-family);
+  font-size: var(--font-body-large-emphasis-size);
+  line-height: var(--font-body-large-emphasis-line-height);
+  font-weight: var(--font-body-large-emphasis-weight);
+  font-style: var(--font-body-large-emphasis-style);
+}
+
+.text-body-large-strong-emphasis {
+  font-family: var(--font-body-large-strong-emphasis-family);
+  font-size: var(--font-body-large-strong-emphasis-size);
+  line-height: var(--font-body-large-strong-emphasis-line-height);
+  font-weight: var(--font-body-large-strong-emphasis-weight);
+  font-style: var(--font-body-large-strong-emphasis-style);
+}
+
+.text-body-base {
+  font-family: var(--font-body-base-regular-family);
+  font-size: var(--font-body-base-regular-size);
+  line-height: var(--font-body-base-regular-line-height);
+  font-weight: var(--font-body-base-regular-weight);
+  font-style: var(--font-body-base-regular-style);
+}
+
+.text-body-base-strong {
+  font-family: var(--font-body-base-strong-family);
+  font-size: var(--font-body-base-strong-size);
+  line-height: var(--font-body-base-strong-line-height);
+  font-weight: var(--font-body-base-strong-weight);
+  font-style: var(--font-body-base-strong-style);
+}
+
+.text-body-base-emphasis {
+  font-family: var(--font-body-base-emphasis-family);
+  font-size: var(--font-body-base-emphasis-size);
+  line-height: var(--font-body-base-emphasis-line-height);
+  font-weight: var(--font-body-base-emphasis-weight);
+  font-style: var(--font-body-base-emphasis-style);
+}
+
+.text-body-base-strong-emphasis {
+  font-family: var(--font-body-base-strong-emphasis-family);
+  font-size: var(--font-body-base-strong-emphasis-size);
+  line-height: var(--font-body-base-strong-emphasis-line-height);
+  font-weight: var(--font-body-base-strong-emphasis-weight);
+  font-style: var(--font-body-base-strong-emphasis-style);
+}
+
+.text-link {
+  font-family: var(--font-link-regular-family);
+  font-size: var(--font-link-regular-size);
+  line-height: var(--font-link-regular-line-height);
+  font-weight: var(--font-link-regular-weight);
+  font-style: var(--font-link-regular-style);
+}
+
+.text-link-strong {
+  font-family: var(--font-link-strong-family);
+  font-size: var(--font-link-strong-size);
+  line-height: var(--font-link-strong-line-height);
+  font-weight: var(--font-link-strong-weight);
+  font-style: var(--font-link-strong-style);
+}
