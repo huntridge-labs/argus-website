@@ -1,12 +1,34 @@
+# Argus Website
 
-  # argus-website
-  public website for the argus project
+Public website for the [Argus](https://github.com/huntridge-labs/argus) project.
 
-  This is a code bundle for Argus Landing Page. The original project is available at https://www.figma.com/design/yrJIFhYypxGageKKCSD6vU/Argus-Landing-Page.
+**Live site:** [argus.huntridgelabs.com](https://argus.huntridgelabs.com/)
 
-  ## Running the code
+## Tech Stack
 
-  Run `npm i` to install the dependencies.
+- **Framework:** React 18 + TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS 4
+- **Animations:** Motion (Framer Motion)
+- **Hosting:** GitHub Pages
 
-  Run `npm run dev` to start the development server.
-  
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Deployment
+
+The site is automatically deployed to GitHub Pages via the `deploy.yml` workflow on push to `main`.
+
+## Design
+
+The original design is available on [Figma](https://www.figma.com/design/yrJIFhYypxGageKKCSD6vU/Argus-Landing-Page).
