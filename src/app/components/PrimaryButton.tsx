@@ -19,7 +19,7 @@ export function PrimaryButton({ href, onClick, children, className = "" }: Prima
       {...componentProps}
       className={`inline-flex items-center gap-2 ${className}`}
       style={{ 
-        backgroundImage: "linear-gradient(135deg, #F8FFA1 0%, #DBE64C 28%, #84B852 63%, #1F87D2 100%)",
+        backgroundImage: "linear-gradient(135deg, #F8FFA1 0%, #DBE64C 28%, #BADE6C 63%, #1F87D2 100%)",
         backgroundSize: "200% 100%",
         color: "#1E1E1E", 
         fontFamily: "var(--font-family-eyebrow)", 

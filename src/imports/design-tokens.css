@@ -11,7 +11,7 @@
   /* Green */
   --color-green-50: #F8FFA1;
   --color-green-200: #DBE64C;
-  --color-green-400: #84B852;
+  --color-green-400: #BADE6C;
   --color-green-600: #118A4F;
   --color-green-700: #00523E;
   --color-green-900: #002AA2; /* verify if intended */
@@ -41,7 +41,7 @@
     90deg,
     #072650 0%,
     #1F87D2 33%,
-    #84B852 66%,
+    #BADE6C 66%,
     #F8FFA1 100%
   );
 

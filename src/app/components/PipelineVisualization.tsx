@@ -88,7 +88,7 @@ export function PipelineVisualization() {
     const activeOffset = (angleSpread * activeIdx) / totalStages;
     const angle        = baseAngle - activeOffset - Math.PI / 2;
 
-    const radius  = 250;
+    const radius  = 207;
     const centerX = 400;
     const centerY = 405;
 
@@ -111,7 +111,7 @@ export function PipelineVisualization() {
   };
 
   return (
-    <div className="relative w-full h-[380px] overflow-hidden">
+    <div className="relative w-full overflow-hidden" style={{ aspectRatio: '800 / 380' }}>
       {/* SVG layer for guide ring only */}
       <svg
         className="absolute top-0 left-0 w-full h-full pointer-events-none"
@@ -122,7 +122,7 @@ export function PipelineVisualization() {
         <motion.circle
           cx="400"
           cy="405"
-          r="250"
+          r="207"
           fill="none"
           stroke="rgba(132, 184, 82, 0.15)"
           strokeWidth="2"
@@ -144,24 +144,19 @@ export function PipelineVisualization() {
         const topPercent = (position.y / 380) * 100;
 
         return (
-          <motion.div
+          <div
             key={stage.name}
             className="absolute pointer-events-none"
             style={{
               left: `${leftPercent}%`,
               top: `${topPercent}%`,
               transform: "translate(-50%, -50%)",
-            }}
-            initial={{ x: 0, y: 0 }}
-            animate={{ x: 0, y: 0 }}
-            transition={{
-              duration: resetting ? 0 : 0.8,
-              ease: "easeInOut",
+              transition: resetting ? 'none' : 'left 0.8s ease-in-out, top 0.8s ease-in-out',
             }}
           >
             <motion.div
               className="flex flex-col items-center gap-3 pt-4"
-              style={{ width: "140px", height: "160px" }}
+              style={{ width: "168px", height: "192px" }}
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{
                 opacity: nodeOpacity,
@@ -177,9 +172,9 @@ export function PipelineVisualization() {
                 <motion.div
                   className="rounded-full border-2 flex items-center justify-center"
                   animate={{
-                    width:           isActive ? "72px" : "56px",
-                    height:          isActive ? "72px" : "56px",
-                    borderColor:     isActive ? "#84B852" : "rgba(132, 184, 82, 0.3)",
+                    width:           isActive ? "86px" : "67px",
+                    height:          isActive ? "86px" : "67px",
+                    borderColor:     isActive ? "#BADE6C" : "rgba(132, 184, 82, 0.3)",
                     backgroundColor: isActive ? "rgba(132, 184, 82, 0.15)" : "rgba(22, 33, 28, 0.6)",
                     boxShadow:       isActive ? "0 0 30px rgba(132, 184, 82, 0.5)" : "none",
                     scale:           isActive ? [1, 1.05, 1] : 1,
@@ -198,8 +193,8 @@ export function PipelineVisualization() {
                     transition={{ duration: 0.5 }}
                   >
                     <Icon
-                      size={isActive ? 28 : 22}
-                      style={{ color: isActive ? "#84B852" : "#9FB09F" }}
+                      size={isActive ? 34 : 26}
+                      style={{ color: isActive ? "#BADE6C" : "#9FB09F" }}
                     />
                   </motion.div>
                 </motion.div>
@@ -209,9 +204,9 @@ export function PipelineVisualization() {
                   <motion.div
                     className="absolute inset-0 rounded-full"
                     style={{
-                      border: "2px solid #84B852",
-                      width:  "72px",
-                      height: "72px",
+                      border: "2px solid #BADE6C",
+                      width:  "86px",
+                      height: "86px",
                     }}
                     initial={{ scale: 1, opacity: 0.8 }}
                     animate={{ scale: 1.8, opacity: 0 }}
@@ -222,7 +217,7 @@ export function PipelineVisualization() {
 
               {/* Stage label */}
               <motion.div
-                className="text-sm font-semibold whitespace-nowrap text-center"
+                className="text-base font-semibold whitespace-nowrap text-center"
                 animate={{
                   color:      isActive ? "#EAF2EA" : "#9FB09F",
                   textShadow: isActive ? "0 0 10px rgba(132, 184, 82, 0.3)" : "none",
@@ -241,8 +236,8 @@ export function PipelineVisualization() {
                 transition={{ duration: 0.4 }}
                 style={{
                   fontFamily:    "var(--font-family-body)",
-                  fontSize:      "11px",
-                  color:         "#84B852",
+                  fontSize:      "13px",
+                  color:         "#BADE6C",
                   marginTop:     "-8px",
                   letterSpacing: "0.04em",
                 }}
@@ -250,7 +245,7 @@ export function PipelineVisualization() {
                 {stage.subtext}
               </motion.div>
             </motion.div>
-          </motion.div>
+          </div>
         );
       })}
     </div>
