@@ -1,9 +1,10 @@
-name: Deploy to GitHub Pages
+name: CI / Deploy to GitHub Pages
 
 on:
   push:
     branches:
       - main
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -16,7 +17,48 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Check for suspicious relative hrefs
+        run: |
+          # Fails on href="..." values that aren't absolute (http://, https://),
+          # mailto:/tel:, or anchors (#/). The site is deployed at the root of a
+          # domain with no nested doc paths, so any bare-relative href (e.g.
+          # "docs/foo.md") is almost certainly a broken link in production.
+          # Adjust the allowlist below if legitimate relative assets are added.
+          bad=$(grep -rnE 'href="[^"]+"' src/ \
+            | grep -vE 'href="(https?:|mailto:|tel:|#|/)' \
+            || true)
+          if [ -n "$bad" ]; then
+            echo "$bad"
+            echo ""
+            echo "::error::Found relative href(s) above. These will 404 in production."
+            echo "If intentional, update the allowlist in .github/workflows/deploy.yml."
+            exit 1
+          fi
+
+      - name: Build
+        run: npm run build
+
   deploy:
+    needs: verify
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
