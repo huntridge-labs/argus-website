@@ -1004,7 +1004,7 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="docs/scanners.md"
+                    href="https://github.com/huntridge-labs/argus/blob/main/docs/scanners.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
@@ -1020,7 +1020,7 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="docs/failure-control.md"
+                    href="https://github.com/huntridge-labs/argus/blob/main/docs/failure-control.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
@@ -1036,7 +1036,7 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="QUICK-START.md"
+                    href="https://github.com/huntridge-labs/argus/blob/main/QUICK-START.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
@@ -1069,7 +1069,7 @@ export default function App() {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="docs/examples/"
+                    href="https://github.com/huntridge-labs/argus/tree/main/docs/examples"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
@@ -1085,7 +1085,7 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="docs/developer/enhanced-pr-comments.md"
+                    href="https://github.com/huntridge-labs/argus/blob/main/docs/developer/enhanced-pr-comments.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
@@ -1101,7 +1101,7 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="CHANGELOG.md"
+                    href="https://github.com/huntridge-labs/argus/blob/main/CHANGELOG.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
@@ -1117,7 +1117,7 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="docs/developer/release-management.md"
+                    href="https://github.com/huntridge-labs/argus/blob/main/docs/developer/release-management.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
@@ -1150,7 +1150,7 @@ export default function App() {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="SECURITY.md"
+                    href="https://github.com/huntridge-labs/argus/blob/main/SECURITY.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
@@ -1183,7 +1183,7 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="docs/scanners.md"
+                    href="https://github.com/huntridge-labs/argus/blob/main/docs/scanners.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
@@ -1199,7 +1199,7 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="CODE_OF_CONDUCT.md"
+                    href="https://github.com/huntridge-labs/argus/blob/main/CODE_OF_CONDUCT.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
@@ -1249,7 +1249,7 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="LICENSE.md"
+                    href="https://github.com/huntridge-labs/argus/blob/main/LICENSE.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
@@ -1265,7 +1265,7 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="CONTRIBUTING.md"
+                    href="https://github.com/huntridge-labs/argus/blob/main/CONTRIBUTING.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
@@ -1281,7 +1281,7 @@ export default function App() {
                 </li>
                 <li>
                   <a
-                    href="AGENTS.md"
+                    href="https://github.com/huntridge-labs/argus/blob/main/AGENTS.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
