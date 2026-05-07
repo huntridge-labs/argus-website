@@ -108,7 +108,7 @@ export function ScannerCoverage() {
                 />
               </svg>
               <div style={{ position: "relative", zIndex: 1 }}>
-                <div style={{ color: "#84B852", marginBottom: "16px" }}>
+                <div style={{ color: "#BADE6C", marginBottom: "16px" }}>
                   {scanner.icon}
                 </div>
                 <div className="flex flex-col gap-1 mb-4">
@@ -127,7 +127,7 @@ export function ScannerCoverage() {
                     style={{
                       fontFamily: "var(--font-family-body)",
                       fontSize: "14px",
-                      color: "#84B852",
+                      color: "#BADE6C",
                       fontWeight: 600,
                     }}
                   >

@@ -119,7 +119,7 @@ export default function App() {
             left: "20%",
             width: "800px",
             height: "800px",
-            background: "radial-gradient(circle, rgba(132, 184, 82, 0.08) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(64, 175, 118, 0.08) 0%, transparent 70%)",
             filter: "blur(60px)",
           }}
           animate={{
@@ -139,7 +139,7 @@ export default function App() {
             right: "15%",
             width: "600px",
             height: "600px",
-            background: "radial-gradient(circle, rgba(219, 230, 76, 0.06) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(64, 175, 118, 0.06) 0%, transparent 70%)",
             filter: "blur(80px)",
           }}
           animate={{
@@ -159,7 +159,7 @@ export default function App() {
             left: "10%",
             width: "700px",
             height: "700px",
-            background: "radial-gradient(circle, rgba(132, 184, 82, 0.05) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(64, 175, 118, 0.05) 0%, transparent 70%)",
             filter: "blur(70px)",
           }}
           animate={{
@@ -179,7 +179,7 @@ export default function App() {
             left: "50%",
             width: "900px",
             height: "900px",
-            background: "radial-gradient(circle, rgba(219, 230, 76, 0.04) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(64, 175, 118, 0.04) 0%, transparent 70%)",
             filter: "blur(90px)",
           }}
           animate={{
@@ -283,7 +283,7 @@ export default function App() {
                     }
                   }}
                   style={{
-                    backgroundImage: "linear-gradient(135deg, #F8FFA1 0%, #DBE64C 28%, #84B852 63%, #1F87D2 100%)",
+                    backgroundImage: "linear-gradient(135deg, #F8FFA1 0%, #DBE64C 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -348,10 +348,10 @@ export default function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-8 py-3.5 rounded-lg flex items-center gap-2"
-                    style={{ backgroundColor: "#16211C", color: "#EAF2EA", fontFamily: "var(--font-family-h6)", fontWeight: 700, fontSize: "16px", border: "1px solid #84B852", boxShadow: "0 0 15px rgba(132, 184, 82, 0.2)" }}
+                    style={{ backgroundColor: "#16211C", color: "#BADE6C", fontFamily: "var(--font-family-h6)", fontWeight: 700, fontSize: "16px", border: "1px solid #BADE6C", boxShadow: "0 0 15px rgba(132, 184, 82, 0.2)" }}
                   >
                     <BookOpen size={20} />
-                    View Documentation
+                    View documentation
                   </a>
                 </motion.div>
               </motion.div>
@@ -362,7 +362,7 @@ export default function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.2, delay: 3.5 }}
-              className="w-full max-w-[900px]"
+              className="hidden md:block w-full max-w-[900px]"
               style={{ marginBottom: "-140px" }}
             >
               <PipelineVisualization />
@@ -468,7 +468,7 @@ export default function App() {
                     }}
                   />
                 </svg>
-                <div style={{ color: "#84B852", marginBottom: "16px", position: "relative", zIndex: 1 }}>
+                <div style={{ color: "#BADE6C", marginBottom: "16px", position: "relative", zIndex: 1 }}>
                   {feature.icon}
                 </div>
                 <h3
@@ -551,7 +551,7 @@ export default function App() {
                       href="https://huntridgelabs.com/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#84B852] hover:text-[#DBE64C]"
+                      className="text-[#BADE6C] hover:text-[#DBE64C]"
                       style={{
                         textDecoration: "underline",
                         transition: "color 0.2s",
@@ -614,7 +614,7 @@ export default function App() {
                     }}
                   />
                 </svg>
-                <div style={{ color: "#84B852", marginBottom: "16px", position: "relative", zIndex: 1 }}>
+                <div style={{ color: "#BADE6C", marginBottom: "16px", position: "relative", zIndex: 1 }}>
                   {feature.icon}
                 </div>
                 <h3
@@ -712,7 +712,7 @@ export default function App() {
                     transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
                   />
                 </svg>
-                <div style={{ color: "#84B852", marginBottom: "12px", display: "flex", justifyContent: "center", position: "relative", zIndex: 1 }}>
+                <div style={{ color: "#BADE6C", marginBottom: "12px", display: "flex", justifyContent: "center", position: "relative", zIndex: 1 }}>
                   {metric.icon}
                 </div>
                 <div
@@ -771,7 +771,7 @@ export default function App() {
                     width: "6px",
                     height: "6px",
                     borderRadius: "50%",
-                    backgroundColor: "#84B852",
+                    backgroundColor: "#BADE6C",
                     display: "inline-block",
                     flexShrink: 0,
                   }}
@@ -781,7 +781,7 @@ export default function App() {
                     fontFamily: "var(--font-family-body)",
                     fontSize: "13px",
                     fontWeight: 500,
-                    color: "#84B852",
+                    color: "#BADE6C",
                   }}
                 >
                   {pill.label}
@@ -871,7 +871,7 @@ export default function App() {
                         fontFamily: "var(--font-family-body)",
                         fontSize: "14px",
                         lineHeight: "20px",
-                        color: "#84B852",
+                        color: "#BADE6C",
                         marginBottom: "16px",
                       }}
                     >
@@ -900,9 +900,9 @@ export default function App() {
                         fontFamily: "var(--font-family-body)",
                         fontSize: "16px",
                         fontWeight: 600,
-                        color: "#EAF2EA",
+                        color: "#BADE6C",
                         backgroundColor: "#16211C",
-                        border: "1px solid #84B852",
+                        border: "1px solid #BADE6C",
                         boxShadow: "0 0 15px rgba(132, 184, 82, 0.2)",
                         textDecoration: "none",
                       }}
@@ -945,9 +945,9 @@ export default function App() {
                         fontFamily: "var(--font-family-body)",
                         fontSize: "16px",
                         fontWeight: 600,
-                        color: "#EAF2EA",
+                        color: "#BADE6C",
                         backgroundColor: "#16211C",
-                        border: "1px solid #84B852",
+                        border: "1px solid #BADE6C",
                         boxShadow: "0 0 15px rgba(132, 184, 82, 0.2)",
                         textDecoration: "none",
                       }}
