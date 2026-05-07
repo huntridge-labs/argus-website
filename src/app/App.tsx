@@ -336,20 +336,24 @@ export default function App() {
                     Explore on GitHub
                   </PrimaryButton>
                 </motion.div>
-                <motion.a
+                <motion.div
                   initial={{ opacity: 0, x: 0 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 3.2 }}
-                  href="https://huntridge-labs.github.io/argus/latest/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-8 py-3.5 rounded-lg flex items-center gap-2"
-                  style={{ backgroundColor: "#16211C", color: "#EAF2EA", fontFamily: "var(--font-family-h6)", fontWeight: 700, fontSize: "16px", border: "1px solid #84B852", boxShadow: "0 0 15px rgba(132, 184, 82, 0.2)" }}
                   whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(132, 184, 82, 0.4)" }}
+                  style={{ borderRadius: "0.5rem" }}
                 >
-                  <BookOpen size={20} />
-                  View Documentation
-                </motion.a>
+                  <a
+                    href="https://huntridge-labs.github.io/argus/latest/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-8 py-3.5 rounded-lg flex items-center gap-2"
+                    style={{ backgroundColor: "#16211C", color: "#EAF2EA", fontFamily: "var(--font-family-h6)", fontWeight: 700, fontSize: "16px", border: "1px solid #84B852", boxShadow: "0 0 15px rgba(132, 184, 82, 0.2)" }}
+                  >
+                    <BookOpen size={20} />
+                    View Documentation
+                  </a>
+                </motion.div>
               </motion.div>
             </motion.div>
 
@@ -1068,7 +1072,7 @@ export default function App() {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="https://github.com/huntridge-labs/argus/tree/main/docs/examples"
+                    href="https://github.com/huntridge-labs/argus/tree/main/examples"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group"
